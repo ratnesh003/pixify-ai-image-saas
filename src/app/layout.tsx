@@ -22,6 +22,7 @@ export default function RootLayout({
 }>) {
   return (
     <ClerkProvider
+      signUpForceRedirectUrl={"https://pixify-ai-image-saas.vercel.app"}
       afterSignOutUrl={"/"}
       appearance={{
         variables: { colorPrimary: "#624cf5" },
