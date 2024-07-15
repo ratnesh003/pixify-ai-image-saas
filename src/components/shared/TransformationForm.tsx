@@ -228,6 +228,7 @@ const TransformationForm = ({
                 onValueChange={(value) =>
                   onSelectFieldHandler(value, field.onChange)
                 }
+                value={field.value}
               >
                 <SelectTrigger className="select-field">
                   <SelectValue placeholder="Select size" />
@@ -255,7 +256,7 @@ const TransformationForm = ({
                 "Object to recolor"
               }
               className="w-full"
-              render={(({ field }) => (
+              render={({ field }) => (
                 <Input 
                   value={field.value}
                   className="input-field"
@@ -266,7 +267,7 @@ const TransformationForm = ({
                     field.onChange
                   )}
                 />
-              ))}
+              )}
             />
 
             {type === 'recolor' && (
