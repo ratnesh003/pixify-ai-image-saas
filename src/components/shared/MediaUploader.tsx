@@ -23,7 +23,7 @@ const MediaUploader = ({
       ...prevState,
       publicId: result?.info?.public_id,
       width: result?.info?.width,
-      heigth: result?.info?.height,
+      height: result?.info?.height,
       secureURL: result?.info?.secure_url,
     }))
 
